@@ -1,5 +1,5 @@
 function Homepage() {
-  return <div className="bg-primary">zqfqf</div>;
+  return <div>zqfqf</div>;
 }
 
 export default Homepage;
