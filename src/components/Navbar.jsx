@@ -1,3 +1,5 @@
-function Navbar() {}
+function Navbar() {
+  return <></>;
+}
 
 export default Navbar;
