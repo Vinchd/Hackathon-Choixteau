@@ -28,8 +28,8 @@ function App() {
         `https://api.opentripmap.com/0.1/en/places/xid/${randomCastle}?apikey=5ae2e3f221c38a28845f05b6f85b1a4179864a9e8c9917017478344e`
       );
     }
-    console.log(castleTable);
-    console.log(castleLink);
+    // console.log(castleTable);
+    // console.log(castleLink);
   }
 
   useEffect(() => {
@@ -44,12 +44,26 @@ function App() {
       .finally(() => {
         setIsLoading(false);
       });
+  }, []);
+
+  useEffect(() => {
     axios
       .all(castleLink.map((link) => axios.get(link)))
-      .then((response) => console.log("Response :" + response))
+      .then((response) => {
+        setCastleTableDetails(response);
+      })
       .catch((error) => console.error(error))
       .finally(() => setIsLoading2(false));
-  }, []);
+  }, [isLoading]);
+
+  // setTimeout(() => {
+  //   console.log("Delayed for 1 second.");
+  //   console.log(castleTableDetails);
+  // }, "10000");
+
+  if (!isLoading2) {
+    console.log(castleTableDetails);
+  }
 
   if (isLoading || isLoading2)
     return (
@@ -59,13 +73,15 @@ function App() {
       </div>
     );
 
-  console.log(castleTableDetails);
   return (
     <Router>
       <div className="bg-tertiary min-h-screen flex flex-col justify-between items-center">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route
+            path="/"
+            element={<Homepage castleTableDetails={castleTableDetails} />}
+          />
           <Route path="/contact" element={<Contact />} />
           <Route path="/castledetails" element={<CastleDetails />} />
         </Routes>
