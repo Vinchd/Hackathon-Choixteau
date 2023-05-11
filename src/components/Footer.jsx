@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-center items-center h-24 bg-primary w-full">
-      <div className="flex flex-row justify-between items-center max-w-xs w-2/4">
+    <footer className="flex flex-col justify-center items-center bg-primary w-full">
+      <div className="flex flex-row justify-between items-center max-w-xs w-2/4 m-2">
         <img
           src="/assets/logo/Facebook.png"
           className="logo-facebook"
@@ -24,7 +24,7 @@ export default function Footer() {
           height="32"
         />
       </div>
-      <p className="text-tertiary">
+      <p className="text-tertiary text-md mb-2">
         © Choîteau - WCS - Hackathon 1 - 2023-02-Remote - Code Quantum
       </p>
     </footer>
