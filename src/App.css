@@ -36,12 +36,11 @@ textarea {
   }
   .basicButton {
     background-color: theme("colors.primary");
-    color: theme("colors.secondary");
+    color: theme("colors.tertiary");
     cursor: pointer;
   }
   .basicButton:hover {
-    background-color: theme("colors.secondary");
-    color: theme("colors.primary");
+    color: theme("colors.secondary");
   }
   .basicButton:active {
     background-color: #c4af63;
