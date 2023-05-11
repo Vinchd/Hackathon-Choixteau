@@ -8,7 +8,7 @@ function Navbar() {
           to="/"
           className="flex flex-row justify-center items-center text-secondary text-2xl font-bold gap-5"
         >
-          <img src="\assets\logo_choiteau.png" width="48" alt="logo du site" />
+          <img src="/assets/logo_choiteau.png" width="48" alt="logo du site" />
           <p>CHOÎTEAU</p>
         </Link>
       </div>
