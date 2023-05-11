@@ -52,7 +52,7 @@ function CastleDetails({ castle }) {
               </li>
             </ul>
           </div>
-          <div className="max-md:row-start-4 max-md:row-end-5 row-start-3 row-end-4 ">
+          <div className="max-md:row-start-4 max-md:row-end-5 row-start-3 row-end-4 flex flex-col justify-end">
             <h2 className="mt-4 font-bold mb-4">En avant pour l'aventure !</h2>
             <div className="flex gap-8">
               <button className="p-2 rounded basicButton cursor-pointer flex">
