@@ -8,13 +8,12 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="bg-primary h-screen flex justify-center">
+      <div className="bg-primary flex justify-center">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
         </Routes>
         <Footer />
-        <ToastContainer transition={Flip} />
       </div>
     </Router>
   );
