@@ -1,1 +1,1 @@
-function CastleDetails() {}
+export default function CastleDetails() {}

@@ -31,8 +31,12 @@ const fakedata = [
 function Homepage() {
   return (
     <div className="flex flex-wrap justify-center gap-4 w-[90%]">
-      {fakedata.map((chateau) => (
-        <Link to="/castledetails" className="h-[180px] w-[165px] md:w-[220px]">
+      {fakedata.map((chateau, index) => (
+        <Link
+          key={index}
+          to="/castledetails"
+          className="h-[180px] w-[165px] md:w-[220px]"
+        >
           <Card chateau={chateau.img} />
         </Link>
       ))}
