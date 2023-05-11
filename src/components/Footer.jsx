@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bottom-0 flex flex-col justify-center items-center bg-primary w-full">
+    <footer className="flex flex-col justify-center items-center bg-primary w-full">
       <div className="flex flex-row justify-between items-center max-w-xs w-3/12 m-2">
         <img
           src="/assets/logo/Facebook.png"
