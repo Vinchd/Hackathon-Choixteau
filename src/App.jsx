@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ToastContainer, Flip } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Contact from "./pages/Contact";
@@ -84,6 +85,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <ToastContainer transition={Flip} />
     </Router>
   );
 }
