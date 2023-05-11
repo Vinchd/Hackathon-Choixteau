@@ -41,8 +41,7 @@ function CastleDetails() {
           <div className="">
             <img
               className="max-h-[300px] max-w-[90%] border-[2px] border-primary drop-shadow-[-4px_4px_4px_rgba(0,0,0,0.25)]"
-              //   src={castles.preview.source}
-              src="/assets/fond-contact.png"
+              src={castles.preview.source}
               alt={castles.name}
             />
           </div>

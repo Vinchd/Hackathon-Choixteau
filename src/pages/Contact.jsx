@@ -1,7 +1,6 @@
 export default function Contact() {
   return (
     <div className="w-full h-[600px] by-28 bg-no-repeat bg-center bg-[url('./assets/fond-contact.png')] flex justify-center">
-      {/* <div className="flex flex-col items-center justify-center"> */}
       <form className="text-primary flex flex-col items-center justify-center w-[300px]">
         <div className="flex flex-col mt-4 w-full">
           <label className="font-bold mb-1" htmlFor="name">
