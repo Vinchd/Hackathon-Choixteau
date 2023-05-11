@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import GoogleMaps from "../components/GoogleMaps";
 
 function CastleDetails({ castle }) {
@@ -10,7 +10,7 @@ function CastleDetails({ castle }) {
   let text;
   castle.data.wikipedia_extracts
     ? (text = castle.data.wikipedia_extracts.text)
-    : (text = "No description");
+    : (text = "No description...");
 
   let lon = 2;
   let lat = 48;
@@ -76,6 +76,13 @@ function CastleDetails({ castle }) {
               Description
             </h2>
             <p>{text}</p>
+            <div className="flex justify-center mt-5">
+              <Link to="/">
+                <button className="px-3 py-1 rounded basicButton cursor-pointer">
+                  Retour
+                </button>
+              </Link>
+            </div>
           </div>
           <div className="pt-[1.2rem] max-md:row-start-5 max-md:row-end-6 row-start-2 row-end-4">
             <GoogleMaps lon={lon} lat={lat} />

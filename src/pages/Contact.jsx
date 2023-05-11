@@ -1,11 +1,23 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-
+     toast.success("Missive envoyée ! 🏰", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+    
     emailjs
       .sendForm(
         "service_y58p5i8",
