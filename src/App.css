@@ -46,4 +46,10 @@ textarea {
     background-color: #c4af63;
     color: theme("colors.primary");
   }
+  .anim {
+    transition: all 1s ease;
+  }
+  .anim:hover {
+    transform: scale(1.1);
+  }
 }
