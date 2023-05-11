@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Contact from "./pages/Contact";
+import Team from "./pages/Team";
 import CastleDetails from "./pages/CastleDetails";
 import Footer from "./components/Footer";
 import axios from "axios";
@@ -84,6 +85,7 @@ function App() {
             element={<Homepage castleTableDetails={castleTableDetails} />}
           />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
           <Route
             path="/castledetails"
             element={<CastleDetails castleTableDetails={castleTableDetails[indexCastle]} />}
