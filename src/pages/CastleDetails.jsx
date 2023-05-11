@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import GoogleMaps from "../components/GoogleMaps";
 
 function CastleDetails({ castle }) {
-  console.log(castle);
   let src;
   castle.data.preview
     ? (src = castle.data.preview.source)
