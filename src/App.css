@@ -4,21 +4,16 @@
 
 @font-face {
   font-family: "montserrat";
-  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "montserrat_italic";
-  src: url("../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-@layer utilities {
-  .bg-nav {
-    background-color: theme("colors.primary");
-  }
+@font-face {
+  font-family: "montserrat_italic";
+  src: url("../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@layer utilities {}
