@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   const castleLink = [];
-  const [indexCastle, setIndexCastle] = useState(1);
+  const [indexCastle, setIndexCastle] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [castleList, setCastleList] = useState([]);
@@ -29,8 +29,6 @@ function App() {
         `https://api.opentripmap.com/0.1/en/places/xid/${randomCastle}?apikey=5ae2e3f221c38a28845f05b6f85b1a4179864a9e8c9917017478344e`
       );
     }
-    // console.log(castleTable);
-    // console.log(castleLink);
   }
 
   useEffect(() => {
@@ -57,15 +55,6 @@ function App() {
       .finally(() => setIsLoading2(false));
   }, [isLoading]);
 
-  // setTimeout(() => {
-  //   console.log("Delayed for 1 second.");
-  //   console.log(castleTableDetails);
-  // }, "10000");
-
-  if (!isLoading2) {
-    console.log(castleTableDetails);
-  }
-
   if (isLoading || isLoading2)
     return (
       <div>
@@ -81,12 +70,17 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Homepage castleTableDetails={castleTableDetails} />}
+            element={
+              <Homepage
+                castleTableDetails={castleTableDetails}
+                setIndexCastle={setIndexCastle}
+              />
+            }
           />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/castledetails"
-            element={<CastleDetails castleTableDetails={castleTableDetails[indexCastle]} />}
+            element={<CastleDetails castle={castleTableDetails[indexCastle]} />}
           />
         </Routes>
         <Footer />
