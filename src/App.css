@@ -4,14 +4,16 @@
 
 @font-face {
   font-family: "montserrat";
-  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "montserrat_italic";
-  src: url("../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,5 +28,18 @@ textarea {
 @layer utilities {
   .contactButton {
     border-radius: 4px;
+  }
+  .basicButton {
+    background-color: theme("colors.primary");
+    color: theme("colors.secondary");
+    cursor: pointer;
+  }
+  .basicButton:hover {
+    background-color: theme("colors.secondary");
+    color: theme("colors.primary");
+  }
+  .basicButton:active {
+    background-color: #c4af63;
+    color: theme("colors.primary");
   }
 }
