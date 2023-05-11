@@ -8,6 +8,7 @@ import CastleDetails from "./pages/CastleDetails";
 import Footer from "./components/Footer";
 import axios from "axios";
 import "./App.css";
+import Loading from "./components/loading";
 
 function App() {
   const castleLink = [];
@@ -56,13 +57,7 @@ function App() {
       .finally(() => setIsLoading2(false));
   }, [isLoading]);
 
-  if (isLoading || isLoading2)
-    return (
-      <div>
-        <div>Choîteau is loading...</div>
-        <div>Please wait a few moment.</div>
-      </div>
-    );
+  if (isLoading || isLoading2) return <Loading />;
 
   return (
     <Router>
