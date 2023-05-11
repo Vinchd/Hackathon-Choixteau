@@ -10,6 +10,7 @@ import "./App.css";
 
 function App() {
   const castleLink = [];
+  const [indexCastle, setIndexCastle] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [castleList, setCastleList] = useState([]);
@@ -83,7 +84,10 @@ function App() {
             element={<Homepage castleTableDetails={castleTableDetails} />}
           />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/castledetails" element={<CastleDetails />} />
+          <Route
+            path="/castledetails"
+            element={<CastleDetails castleTableDetails={castleTableDetails[indexCastle]} />}
+          />
         </Routes>
         <Footer />
       </div>
