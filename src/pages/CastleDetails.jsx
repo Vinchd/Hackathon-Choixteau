@@ -25,7 +25,7 @@ function CastleDetails({ castle }) {
         {castle.data.name}
       </h2>
       <div className="p-[3rem]">
-        <div className="grid max-md:grid-cols-1 grid-cols-2">
+        <div className="grid max-md:grid-cols-1 grid-cols-2 gap-[32px]">
           <div className="max-md:row-start-1 max-md:row-end-2">
             <img
               className="max-h-[300px] max-w-[90%] border-[2px] border-primary drop-shadow-[-4px_4px_4px_rgba(0,0,0,0.25)]"
@@ -53,16 +53,22 @@ function CastleDetails({ castle }) {
               </li>
             </ul>
           </div>
-          <div className="max-md:row-start-4 max-md:row-end-5 row-start-3 row-end-4">
-            <h2 className="pt-[1.2rem] font-bold text-center mb-4">
-              En avant pour l'aventure !
-            </h2>
-            <div className="flex flex-row justify-between px-8">
+          <div className="max-md:row-start-4 max-md:row-end-5 row-start-3 row-end-4 ">
+            <h2 className="mt-4 font-bold mb-4">En avant pour l'aventure !</h2>
+            <div className="flex gap-8">
               <button className="p-2 rounded basicButton cursor-pointer flex">
-                <a href={castle.data.url}>Booking</a>
+                <a href={castle.data.url} rel="noreferrer" target="_blank">
+                  Booking
+                </a>
               </button>
               <button className="p-2 rounded basicButton cursor-pointer flex">
-                <a href={castle.data.wikipedia}>Wikipedia</a>
+                <a
+                  href={castle.data.wikipedia}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia
+                </a>
               </button>
             </div>
           </div>
