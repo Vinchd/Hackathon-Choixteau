@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="bg-tertiary h-screen flex flex-col justify-between items-center">
+      <div className="bg-tertiary h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
