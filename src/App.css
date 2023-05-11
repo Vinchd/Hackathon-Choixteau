@@ -26,6 +26,11 @@ textarea {
 }
 
 @layer utilities {
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+
   .contactButton {
     border-radius: 4px;
   }
