@@ -1,38 +1,37 @@
 export default function Contact() {
   return (
-    <div className="w-full h-full by-28 bg-no-repeat bg-center bg-[url('./assets/fond-contact.png')] flex justify-center">
-      <div className="flex flex-col items-center justify-center">
-        <form className="text-primary">
-          <div className="flex flex-col mt-4">
-            <label className="font-bold" htmlFor="name">
-              Name
-            </label>
-            <input id="name" type="name" />
-          </div>
-          <div className="flex flex-col mt-4">
-            <label className="font-bold" htmlFor="email">
-              Email
-            </label>
-            <input id="email" type="text" />
-          </div>
-          <div className="flex flex-col mt-4">
-            <label className="font-bold" htmlFor="message">
-              Message
-            </label>
-            <textarea
-              className="h-40"
-              id="message"
-              type="message"
-              placeholder="Saisissez votre message ici"
-            />
-          </div>
-          <div className="flex justify-center mt-8 contactButton bg-primary text-secondary">
-            <button className="font-bold" type="submit">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
+    <div className="w-full h-[600px] by-28 bg-no-repeat bg-center bg-[url('./assets/fond-contact.png')] flex justify-center">
+      {/* <div className="flex flex-col items-center justify-center"> */}
+      <form className="text-primary flex flex-col items-center justify-center w-[300px]">
+        <div className="flex flex-col mt-4 w-full">
+          <label className="font-bold mb-1" htmlFor="name">
+            Name
+          </label>
+          <input id="name" type="name" />
+        </div>
+        <div className="flex flex-col mt-4 w-full">
+          <label className="font-bold mb-1" htmlFor="email">
+            Email
+          </label>
+          <input id="email" type="email" />
+        </div>
+        <div className="flex flex-col mt-4 w-full">
+          <label className="font-bold mb-1" htmlFor="message">
+            Message
+          </label>
+          <textarea
+            className="h-40 w-full"
+            id="message"
+            type="message"
+            placeholder="Saisissez votre message ici"
+          />
+        </div>
+        <div className="flex justify-center mt-8 contactButton bg-primary text-tertiary w-24">
+          <button className="font-bold" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
   );
 }

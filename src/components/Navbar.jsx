@@ -6,7 +6,7 @@ function Navbar() {
       <div className="m-4">
         <Link
           to="/"
-          className="flex flex-row justify-center items-center text-secondary text-2xl font-bold gap-5"
+          className="flex flex-row justify-center items-center text-tertiary text-2xl font-bold gap-5"
         >
           <img src="/assets/logo_choiteau.png" width="48" alt="logo du site" />
           <p>CHOÎTEAU</p>
