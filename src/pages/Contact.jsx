@@ -25,7 +25,7 @@ export default function Contact() {
             placeholder="Saisissez votre message ici"
           />
         </div>
-        <div className="flex justify-center mt-8 contactButton bg-primary text-tertiary w-24">
+        <div className="flex justify-center mt-8 contactButton basicButton w-24">
           <button className="font-bold" type="submit">
             Submit
           </button>
