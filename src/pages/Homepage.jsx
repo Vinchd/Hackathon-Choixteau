@@ -1,5 +1,11 @@
+import CastleDetails from "./CastleDetails";
+
 function Homepage() {
-  return <div>zqfqf</div>;
+  return (
+  <div>
+    <CastleDetails />
+  </div>
+  );
 }
 
 export default Homepage;
