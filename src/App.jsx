@@ -8,7 +8,10 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="bg-primary h-screen flex justify-center">
+      <div
+        className="bg-primary h-screen flex flex-col justify-between
+      "
+      >
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
