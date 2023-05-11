@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import CastleDetails from "./pages/CastleDetails";
+import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import axios from "axios";
 import "./App.css";
@@ -79,6 +80,7 @@ function App() {
             path="/castledetails"
             element={<CastleDetails castle={castleTableDetails[indexCastle]} />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
