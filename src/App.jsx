@@ -1,23 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ToastContainer, Flip } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div
-        className="bg-primary h-screen flex flex-col justify-between
-      "
-      >
+      <div className="bg-tertiary h-screen flex flex-col justify-between items-center">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-        <ToastContainer transition={Flip} />
       </div>
     </Router>
   );
