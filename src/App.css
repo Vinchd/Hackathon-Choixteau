@@ -17,8 +17,18 @@
   font-style: normal;
 }
 
+input,
+textarea {
+  border-radius: 4px;
+  background-color: lightgrey;
+  padding-inline: 0.5rem;
+}
+
 @layer utilities {
   .bg-nav {
     background-color: theme("colors.primary");
+  }
+  .contactButton {
+    border-radius: 4px;
   }
 }

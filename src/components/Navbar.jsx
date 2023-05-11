@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="flex flex-row bg-nav justify-between items-center">
+    <div className="flex flex-row bg-nav justify-between items-center w-full">
       <div className="m-4">
         <Link to="/">
-          <img src=".\public\assets\logo_choiteau.png" alt="logo du site" />
+          <img src="./assets/logo_choiteau.png" alt="logo du site" />
         </Link>
       </div>
       <div className="flex flex-row justify-end text-tertiary mr-4 font-bold text-xl">
