@@ -2,9 +2,8 @@ import Card from "../components/Card";
 import { Link } from "react-router-dom";
 
 function Homepage({ castleTableDetails, setIndexCastle }) {
-  // console.log(castleTableDetails[0]);
   return (
-    <div className="flex flex-col justify-center items-center my-[50px] mt-[80px]">
+    <div className="flex flex-col justify-center items-center my-[50px] mt-[80px] max-w-[1150px]">
       <h2 className="castll translate-y-[-50px]">
         Phrase en cours de construction
       </h2>

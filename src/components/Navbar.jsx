@@ -12,12 +12,12 @@ function Navbar() {
           <p>CHOÎTEAU</p>
         </Link>
       </div>
-      <div className="flex flex-row justify-end text-tertiary mr-4 font-bold text-xl">
+      <div className="flex max-sm:flex-col max-sm:items-end sm:flex-row justify-end text-tertiary mr-4 font-bold text-xl">
         <Link to="/team">
-          <p className="m-4">Team</p>
+          <p className="max-sm:m-1 m-4">Team</p>
         </Link>
         <Link to="/contact">
-          <p className="m-4">Contact</p>
+          <p className="max-sm:m-1 m-4">Contact</p>
         </Link>
       </div>
     </div>
