@@ -21,7 +21,7 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
           <Link
             key={index}
             to="/castledetails"
-            className="h-[180px] w-[165px] md:w-[220px]"
+            className="h-[180px] w-[165px] md:w-[220px] anim"
             onClick={() => {
               setIndexCastle(index);
             }}
