@@ -7,9 +7,15 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
   }
   return (
     <div className="flex flex-col justify-center items-center my-[50px] mt-[80px] max-w-[1150px] 2xl:max-w-[1440px]">
-      <h2 className="castll translate-y-[-50px]">
-        Phrase en cours de construction
+      <img
+        src="/assets/pngegg3.png"
+        className="h-[180px] 2xl:h-[240px] translate-y-[-50px] relative md:right-[300px]"
+      />
+      <h2 className="castll translate-y-[-50px] relative md:bottom-[90px] font-caveat max-sm:text-xl text-3xl text-center">
+        Prêts pour un voyage princier à l'aveugle ?<br /> Laissez le Choixteau
+        vous surprendre !
       </h2>
+
       <input
         onClick={refreshPage}
         type="button"
