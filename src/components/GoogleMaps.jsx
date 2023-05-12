@@ -17,9 +17,7 @@ function GoogleMaps({ lat, lon }) {
   return (
     <LoadScript googleMapsApiKey="AIzaSyAGVHYpyI9ZcYeRgcpK8LuglwX3N73BY3Q">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={7}>
-        {/* Child components, such as markers, info windows, etc. */}
         <Marker position={center} />
-        <></>
       </GoogleMap>
     </LoadScript>
   );
