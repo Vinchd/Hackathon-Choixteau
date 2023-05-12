@@ -6,12 +6,13 @@ export default {
       fontFamily: {
         montserrat: ["montserrat, Arial, sans-serif"],
         montserrat_italic: ["montserrat_italic, montserrat, Arial, sans-serif"],
+        caveat: ["caveat, Arial, sans-serif"],
       },
     },
     colors: {
-      primary: "#BADA55",
-      secondary: "",
-      tertiary: "",
+      primary: "#1A345E",
+      secondary: "#F8DE7E",
+      tertiary: "#FFFDF8",
     },
   },
   plugins: [],
