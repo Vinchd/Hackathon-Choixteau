@@ -12,6 +12,7 @@ import axios from "axios";
 import "./App.css";
 import Loading from "./components/Loading";
 
+const VITE_OPENTRIP_KEY = import.meta.env.VITE_OPENTRIP_KEY;
 function App() {
   const castleLink = [];
   const [indexCastle, setIndexCastle] = useState(0);
@@ -30,7 +31,7 @@ function App() {
       } while (castleTable.includes(randomCastle));
       castleTable.push(randomCastle);
       castleLink.push(
-        `https://api.opentripmap.com/0.1/en/places/xid/${randomCastle}?apikey=5ae2e3f221c38a28845f05b6f85b1a4179864a9e8c9917017478344e`
+        `https://api.opentripmap.com/0.1/en/places/xid/${randomCastle}?apikey=${VITE_OPENTRIP_KEY}`
       );
     }
   }
@@ -38,7 +39,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://api.opentripmap.com/0.1/en/places/radius?radius=500000&lon=2&lat=48&name=chateau&rate=1h&apikey=5ae2e3f221c38a28845f05b6f85b1a4179864a9e8c9917017478344e"
+        `https://api.opentripmap.com/0.1/en/places/radius?radius=500000&lon=2&lat=48&name=chateau&rate=1h&apikey=${VITE_OPENTRIP_KEY}`
       )
       .then((response) => {
         setCastleList(response.data.features);
