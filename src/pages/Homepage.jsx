@@ -6,7 +6,7 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
     window.location.reload(false);
   }
   return (
-    <div className="flex flex-col justify-center items-center my-[50px] mt-[80px] max-w-[1150px]">
+    <div className="flex flex-col justify-center items-center my-[50px] mt-[80px] max-w-[1150px] 2xl:max-w-[1440px]">
       <h2 className="castll translate-y-[-50px]">
         Phrase en cours de construction
       </h2>
@@ -21,7 +21,7 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
           <Link
             key={index}
             to="/castledetails"
-            className="h-[180px] w-[165px] md:w-[220px] anim"
+            className="h-[180px] w-[165px] md:w-[220px] 2xl:w-[300px] 2xl:h-[244px] anim"
             onClick={() => {
               setIndexCastle(index);
             }}
