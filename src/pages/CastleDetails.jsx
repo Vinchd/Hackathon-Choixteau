@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import GoogleMaps from "../components/GoogleMaps";
 
 function CastleDetails({ castle }) {
@@ -92,5 +93,9 @@ function CastleDetails({ castle }) {
     </div>
   );
 }
+
+CastleDetails.propTypes = {
+  castle: PropTypes.shape(),
+};
 
 export default CastleDetails;

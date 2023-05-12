@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Card({ chateau }) {
   let src = "/assets/no-image.png";
   chateau.data.preview
@@ -14,5 +16,9 @@ function Card({ chateau }) {
     </>
   );
 }
+
+Card.propTypes = {
+  chateau: PropTypes.shape().isRequired,
+};
 
 export default Card;

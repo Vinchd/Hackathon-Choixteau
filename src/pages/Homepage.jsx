@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Homepage({ castleTableDetails, setIndexCastle }) {
   function refreshPage() {
@@ -39,5 +40,10 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
     </div>
   );
 }
+
+Homepage.propTypes = {
+  castleTableDetails: PropTypes.array,
+  setIndexCastle: PropTypes.func,
+};
 
 export default Homepage;
