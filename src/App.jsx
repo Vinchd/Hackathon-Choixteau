@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import axios from "axios";
 import "./App.css";
-import Loading from "./components/loading";
+import Loading from "./components/Loading";
 
 function App() {
   const castleLink = [];
@@ -81,7 +81,7 @@ function App() {
             path="/castledetails"
             element={<CastleDetails castle={castleTableDetails[indexCastle]} />}
           />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
