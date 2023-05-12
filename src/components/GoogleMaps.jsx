@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { Marker } from "@react-google-maps/api";
 
@@ -23,5 +24,10 @@ function GoogleMaps({ lat, lon }) {
     </LoadScript>
   );
 }
+
+GoogleMaps.propTypes = {
+  lat: PropTypes.number,
+  lon: PropTypes.number,
+};
 
 export default React.memo(GoogleMaps);
