@@ -12,8 +12,8 @@ import axios from "axios";
 import "./App.css";
 import Loading from "./components/Loading";
 
-const VITE_OPENTRIP_KEY = import.meta.env.VITE_OPENTRIP_KEY;
 function App() {
+  const VITE_OPENTRIP_KEY = import.meta.env.VITE_OPENTRIP_KEY;
   const castleLink = [];
   const [indexCastle, setIndexCastle] = useState(0);
   const [isLoading, setIsLoading] = useState(true);

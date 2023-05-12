@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { Marker } from "@react-google-maps/api";
 
-const VITE_GOOGLE_KEY = import.meta.env.VITE_GOOGLE_KEY;
 const containerStyle = {
   width: "100%",
   height: "300px",
@@ -11,6 +10,7 @@ const containerStyle = {
 };
 
 function GoogleMaps({ lat, lon }) {
+  const VITE_GOOGLE_KEY = import.meta.env.VITE_GOOGLE_KEY;
   const center = {
     lat: lat,
     lng: lon,
