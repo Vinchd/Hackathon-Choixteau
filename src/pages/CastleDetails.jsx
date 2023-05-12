@@ -54,7 +54,9 @@ function CastleDetails({ castle }) {
             </ul>
           </div>
           <div className="max-md:row-start-4 max-md:row-end-5 row-start-3 row-end-4 flex flex-col justify-end">
-            <h2 className="mt-4 font-bold mb-4">En avant pour l'aventure !</h2>
+            <h2 className="mt-4 font-bold mb-4">
+              En avant pour l&apos;aventure !
+            </h2>
             <div className="flex gap-8">
               <button className="p-2 rounded basicButton cursor-pointer flex">
                 <a href={castle.data.url} rel="noreferrer" target="_blank">

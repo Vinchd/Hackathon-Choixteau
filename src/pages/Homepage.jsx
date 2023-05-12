@@ -13,8 +13,8 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
         className="h-[180px] 2xl:h-[240px] translate-y-[-50px] relative md:right-[300px]"
       />
       <h2 className="castll translate-y-[-50px] relative md:bottom-[90px] font-caveat max-sm:text-xl text-3xl text-center">
-        Prêts pour un voyage princier à l'aveugle ?<br /> Laissez le Choîxteau
-        vous surprendre !
+        Prêts pour un voyage princier à l&apos;aveugle ?<br /> Laissez le
+        Choîxteau vous surprendre !
       </h2>
 
       <input
