@@ -7,12 +7,12 @@ function Homepage({ castleTableDetails, setIndexCastle }) {
     window.location.reload(false);
   }
   return (
-    <div className="flex flex-col justify-center items-center my-[50px] mt-[80px] max-w-[1150px] 2xl:max-w-[1440px]">
+    <div className="flex flex-col justify-center items-center my-[50px] mt-[80px] md:my-[20px] md:mt-0 max-w-[1150px] 2xl:max-w-[1440px]">
       <img
         src="/assets/pngegg3.png"
-        className="h-[180px] 2xl:h-[240px] translate-y-[-50px] relative md:right-[300px]"
+        className="h-[100px] 2xl:h-[140px] translate-y-[-50px] md:translate-y-[20px] relative md:right-[300px]"
       />
-      <h2 className="castll translate-y-[-50px] relative md:bottom-[90px] font-caveat max-sm:text-xl text-3xl text-center">
+      <h2 className="castll translate-y-[-50px] md:translate-y-0 relative md:bottom-[60px] font-caveat max-sm:text-xl text-3xl text-center">
         Prêts pour un voyage princier à l&apos;aveugle ?<br /> Laissez le
         Choîxteau vous surprendre !
       </h2>
