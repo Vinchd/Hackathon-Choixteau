@@ -1,9 +1,9 @@
 function Team() {
   return (
-    <div className="flex max-sm:flex-col sm:flex-row sm:max-2xl:flex-wrap items-center justify-center">
+    <div className="flex max-sm:flex-col sm:flex-row sm:max-2xl:flex-wrap items-center justify-center mt-5">
       <div>
         <a
-          className="flex flex-col items-center pt-5"
+          className="flex flex-col items-center"
           href="https://www.linkedin.com/in/vincent-daviaud-2786a120b/"
           rel="noreferrer"
           target="_blank"
