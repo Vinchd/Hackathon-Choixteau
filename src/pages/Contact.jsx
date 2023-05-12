@@ -7,7 +7,7 @@ export default function Contact() {
   const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-     toast.success("Missive envoyée ! 🏰", {
+    toast.success("Missive envoyée ! 🏰", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -17,7 +17,7 @@ export default function Contact() {
       progress: undefined,
       theme: "dark",
     });
-    
+
     emailjs
       .sendForm(
         "service_y58p5i8",
@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full h-[600px] by-28 bg-no-repeat bg-center bg-[url('./assets/fond-contact.png')] flex justify-center">
+    <div className="w-full h-[600px] by-28 bg-no-repeat bg-center bg-[url('/assets/fond-contact.png')] flex justify-center">
       <form
         ref={form}
         onSubmit={handleSubmit}
