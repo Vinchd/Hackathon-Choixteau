@@ -2,11 +2,11 @@ export default function Footer() {
   return (
     <footer className="flex flex-col justify-center items-center bg-primary w-full">
       <div className="flex flex-row justify-between items-center max-w-xs w-3/12 m-2">
-        <a href="https://en-gb.facebook.com/anthony.gorski.50" target="_blank">
+        <a href="https://www.instagram.com/jule.gorski/" target="_blank">
           <img
-            src="/assets/logo/Facebook.png"
+            src="/assets/logo/Instagram.png"
             className="logo-facebook"
-            alt="logo facebook"
+            alt="Instagram"
             width="32"
             height="32"
           />
@@ -15,7 +15,7 @@ export default function Footer() {
           <img
             src="/assets/logo/Twitter.png"
             className="logo-twitter"
-            alt="logo twitter"
+            alt="Twitter"
             width="32"
             height="32"
           />
@@ -25,7 +25,7 @@ export default function Footer() {
           <img
             src="/assets/logo/YouTube.png"
             className="logo-youtube"
-            alt="logo youtube"
+            alt="Youtube"
             width="32"
             height="32"
           />
