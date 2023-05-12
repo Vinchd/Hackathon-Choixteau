@@ -32,7 +32,7 @@ export default function Footer() {
         </a>
       </div>
       <p className="text-tertiary text-md mb-2 lg:m-2 lg:absolute lg:right-0">
-        © Choîteau - WCS - Hackathon 1 - Code Quantum
+        © Choîxteau - WCS - Hackathon 1 - Code Quantum
       </p>
     </footer>
   );
